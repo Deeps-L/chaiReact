@@ -4,7 +4,7 @@ import {useEffect, useState} from "react"
 function useCurrencyInfo(currency){
     const [data, setData] = useState({})
     useEffect(() => {
-        fetch(` https://github.com/fawazahmed0/exchange-api/blob/main/country.json`)
+        fetch(`https://api.exchangerate-api.com/v4/latest/USD`)
        
         .then((res) => res.json())
         .then((res) => setData(res[currency]))

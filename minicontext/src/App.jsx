@@ -7,12 +7,9 @@ import Profile from './assets/Components/Profile'
 
  function App() {
   return (
-    <UserContextProvider>
-      
+    <UserContextProvider>    
       <Login />
-      <Profile />
-      
-      
+      <Profile />       
     </UserContextProvider>
   )
 }
